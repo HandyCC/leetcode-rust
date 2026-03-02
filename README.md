@@ -5,7 +5,12 @@
 ## 执行测试
 
 ```Bash
-rustc --test --out-dir target <rs file> && target/<bin file>
+rustc --test --out-dir target <rs-file> && target/<bin-file>
+```
+
+执行具体的test方法：
+```Bash
+<bin-file> --exact <method>
 ```
 
 ## 算法思路
@@ -14,7 +19,8 @@ rustc --test --out-dir target <rs file> && target/<bin file>
 * 修改循环的顺序（或起始点）
 * 滑动窗口，即实际时间复杂度为O(n)的双重循环(通常也可以写成单个循环)
 * 把数组（或其他数据结构）尝试拆分/理解成其他数据结构
-* 计数排序
+* 计数排序，即把数组元素值当做数量，直接使用数组的索引作为顺序
+* 前缀和、后缀和
 
 ## 经典算法
 * 摩尔投票
